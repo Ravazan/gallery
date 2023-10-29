@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+	<style>
+		div{
+			width: 100px;
+			height: 50px;
+			background-color: cyan;
+			font-weight: bold;
+			animation: mymove 5s infinite;
+			animation-duration: 3;
+			position: relative;
+		}
+		#div1{animation-timing-function: linear;}
+		#div2{animation-timing-function: ease;}
+		#div3{animation-timing-function: ease-in;}
+		#div4{animation-timing-function: ease-out;}
+		#div5{animation-timing-function: ease-in-out;}
+		@keyframes mymove {
+			from{left:0px}
+			to{left:900px;}
+		}
+	</style>
+</head>
+<body>
+	<div id="div1">linear</div>
+	<div id="div2">ease</div>
+	<div id="div3">ease-in</div>
+	<div id="div4">ease-out</div>
+	<div id="div5">ease-in-out</div>
+</body>
+</html>
